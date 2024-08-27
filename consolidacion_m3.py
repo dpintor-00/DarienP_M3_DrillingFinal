@@ -11,11 +11,36 @@ personas = ["Harry Houdini",
             "Juanes"
 ]
 
-# Clasificación listas magos-cientificos-otros
+# Clasificación listas magos-cientificos-otros.
+# Se utilizan listas vacías y luego mediante un ciclo for se recorre la lista personas para posteriormente agregar a la lista respectiva el nombre en específico que se busca.
 
-magos = [personas[0], personas[2], personas[5]]
-cientificos = [personas[1], personas[3], personas[6]]
-otros = [personas[4], personas[7], personas[8]]
+magos = []
+cientificos = []
+otros = []
+
+for mago in personas:
+    if mago == "Harry Houdini":
+        magos.append(mago)
+    elif mago == "David Blaine":
+        magos.append(mago)
+    elif mago == "Teller":
+        magos.append(mago)
+
+for cientifico in personas:
+    if cientifico == "Newton":
+        cientificos.append(cientifico)
+    elif cientifico == "Hawking":
+        cientificos.append(cientifico)
+    elif cientifico == "Einstein":
+        cientificos.append(cientifico)
+
+for otro in personas:
+    if otro == "Messi":
+        otros.append(otro)
+    elif otro == "Pele":
+        otros.append(otro)
+    elif otro == "Juanes":
+        otros.append(otro)
 
 # Se definen funciones, "imprimir_x" imprime las listas de personas antes clasificadas
 # "hacer_grandioso" modifica la lista de magos para que antes de cada nombre el string diga "El gran [mago]"
